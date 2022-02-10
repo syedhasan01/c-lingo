@@ -1,0 +1,83 @@
+#include<stdio.h>
+#include<conio.h>
+int main(void){
+ char n[20];
+
+ printf("Enter Your Name\n");
+ gets(n);
+
+
+ char o='y';
+ int a = 1;
+ int item;
+ int total=0;
+int q;
+    while(a==1){
+
+ printf("\tno\tItems\t\tprice\n");
+ printf("\t1\tSausage\t\tRs220\n");
+ printf("\t2\tCheese and Mushroom Omelet\t\tRs50\n");
+ printf("\t3\tParatha\t\tRs25\n");
+ printf("\t4\tFrench Toast\t\tRs45\n");
+ printf("\t5\tCoffee\t\tRs120\n");
+
+ printf("\t6\tTea\t\t40\n");
+
+ printf("\t7\tPan Cake\t\t395\n");
+
+
+
+        printf("\nEnter Item Number\n");
+        scanf("%d",&item);
+
+        if(item==1){
+                printf("\n\tYou Select Sausage\n\t\tNow Enter the Quantity");
+            scanf("%d",&q);
+            total=q*220;
+        } else if(item==2){
+                printf("\n\tYou Select Cheese and Mushroom Omelet\n\t\tNow Enter the Quantity");
+            scanf("%d",&q);
+            total=q*50;
+        }
+         else if(item==3){
+                printf("\n\tYou Select Paratha\n\t\tNow Enter the Quantity");
+            scanf("%d",&q);
+            total=q*25;
+        }
+         else if(item==4){
+                printf("\n\tYou Select French Toast\n\t\tNow Enter the Quantity");
+            scanf("%d",&q);
+            total=q*45;
+        }
+         else if(item==5){
+                printf("\n\tYou Select Coffee\n\t\tNow Enter the Quantity");
+            scanf("%d",&q);
+            total=q*45;
+        }
+         else if(item==6){
+                printf("\n\tYou Select Tea\n\t\tNow Enter the Quantity");
+            scanf("%d",&q);
+            total=q*40;
+        }
+         else if(item==7){
+                printf("\n\tYou Select Pan Cake with Nutella Serving\n\t\tNow Enter the Quantity");
+            scanf("%d",&q);
+            total=q*395;
+        }else{
+        printf("You Enter Wrong Item Number\n");
+        }
+
+
+        printf("\nyou want to add more items\n");
+        printf("\nEnter 1 for continue order\n");
+        printf("\nEnter 0 for bill\n");
+        scanf("%d",&a);
+
+    }
+//printf("Your Total bill:\t%d",total);
+printf("\t%s\tYour Total bill:\t%d",n,total);
+int exit;
+printf("\n\n\nenter any key to exit");
+scanf("%d",&exit);
+return 0;
+    }
